@@ -8,6 +8,15 @@
             margin: 0;
             padding: 0;
         }
+
+        div {
+            display: block;
+        }
+
+        body {
+            font-family: "open sans", "Helvetica Neue", "微软雅黑", Helvetica, Arial, sans-serif;
+        }
+
         .wrapper {
             background: #F7F7F7;
         }
@@ -29,9 +38,93 @@
             height: 60px;
             background-color: #ffffff;
             float: left;
-            margin: 0 10px;
+            margin: 0;
+            border: 1px solid #f3f3f4;
         }
 
+        .content-top-two {
+            width: 1780px;
+            height: 60px;
+            background-color: #ffffff;
+            float: left;
+            margin: 0;
+            border: 0 solid #f3f3f4;
+            border-bottom-width: 1px;
+        }
+
+        .wrapper-content {
+            float: left;
+            width: 1780px;
+            padding: 10px;
+        }
+
+        .row {
+            float: left;
+        }
+
+        .col {
+            float: left;
+            width: 25%;
+            height: 140px;
+            margin: 0 15px;
+            background-color: #ffffff;
+        }
+
+        .ibox {
+            clear: both;
+            {#float: left;#}
+            margin-top: 0;
+            {#margin-bottom: 25px;#}
+            padding: 0;
+            background: red;
+            /*高度塌陷*/
+        }
+
+        .ibox-title {
+            float: left;
+            width: 200px;
+            padding: 14px 15px 7px;
+            border: 0 solid #f3f3f4;
+            border-bottom-width: 1px;
+        }
+
+        .label-right {
+            font-size: 10px;
+            font-weight: 600;
+            padding: 3px 8px;
+            text-shadow: none;
+            display: inline;
+            float: right;
+        }
+
+        .ibox-title h5 {
+            display: inline-block;
+            font-size: 14px;
+            margin: 0 0 7px;
+            padding: 0;
+            text-overflow: ellipsis;
+            float: left;
+        }
+
+        .label-success {
+            background-color: #1c84c6;
+            color: #FFFFFF;
+        }
+
+        .label-info {
+            background-color: #23c6c8;
+            color: #FFFFFF;
+        }
+
+        .label-primary {
+            background-color: #1ab394;
+            color: #FFFFFF;
+        }
+
+        .label-danger {
+            background-color: #ed5565;
+            color: #FFFFFF;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +132,49 @@
         <div class="content">
             <div class="content-left"></div>
             <div class="content-top">a</div>
+            <div class="content-top-two">b</div>
+            <div class="wrapper-content">
+                <div class="row">
+                    <div class="col">
+
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <span class="label-right label-success">User</span>
+                                <h5>用户数</h5>
+                            </div>
+                            <div class="ibox-content">b</div>
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <span class="label-right label-info">Hosts</span>
+                                <h5>主机总数</h5>
+                            </div>
+                            <div class="ibox-content">b</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <span class="label-right label-primary">Online</span>
+                                <h5>在线用户</h5>
+                            </div>
+                            <div class="ibox-content">b</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ibox">
+                            <div class="ibox-title">
+                                <span class="label-right label-danger">Connected</span>
+                                <h5>在线会话</h5>
+                            </div>
+                            <div class="ibox-content">b</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
